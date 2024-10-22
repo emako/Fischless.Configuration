@@ -4,7 +4,25 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Version>$(VersionPrefix)1.0.0.0</Version>
+		<Authors>ema</Authors>
+		<Company>ema</Company>
+		<Description>A simple configuration library.</Description>
+		<PackageProjectUrl>https://github.com/emako/Fischless.Configuration</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/emako/Fischless.Configuration</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>.NET Configuration</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>logo.png</PackageIcon>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="" />
+		<None Include="..\..\images\logo.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="ini-parser" Version="2.5.2" />
