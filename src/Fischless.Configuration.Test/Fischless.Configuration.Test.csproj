@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Fischless.Configuration.Ini\Fischless.Configuration.Ini.csproj" />
+		<ProjectReference Include="..\Fischless.Configuration.Json\Fischless.Configuration.Json.csproj" />
+		<ProjectReference Include="..\Fischless.Configuration.Yaml\Fischless.Configuration.Yaml.csproj" />
+		<ProjectReference Include="..\Fischless.Configuration\Fischless.Configuration.csproj" />
+	</ItemGroup>
+
+</Project>
