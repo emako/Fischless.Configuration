@@ -31,8 +31,8 @@ public static class Configurations
 
 ```c#
 // Configurations setup of ConfigurationSerializer and FileName.
-ConfigurationManager.ConfigurationSerializer = new YamlConfigurationSerializer(); // JsonConfigurationSerializer
-ConfigurationManager.Setup(ConfigurationSpecialPath.GetPath($"config.yaml, "yourAppName"));
+ConfigurationManager.ConfigurationSerializer = new JsonConfigurationSerializer(); // YamlConfigurationSerializer
+ConfigurationManager.Setup(ConfigurationSpecialPath.GetPath($"config.yaml", "yourAppName"));
 
 // Configurations Getter and Setter
 string lang1 = Configurations.Language.Get();
